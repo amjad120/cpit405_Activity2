@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When2Meet Clone</title>
+</head>
+<body>
+    <div></div>
+    <h1> When2Meet</h1>
+     <ul>
+        <li ><a href="#Create_Event">Create Event</a></li>
+        <li ><a href="#Input_Availability">Input Availability</a></li>
+        <li ><a href="#View_Result">View Result</a></li>
+        <li ><a href="#Sign_Up">Sign Up</a></li>
+     </ul>
+
+    <form action="http://httpbin.org/post" method="post">
+        <h2 id="Create_Event">Create Event</h2>
+
+        <label for="eventname">Event Name:</label>
+        <input type="text" name="eventname" id="eventname" 
+        minlength="2" maxlength="20" size="18" placeholder="Enter here" required >
+       
+        <label for="Description">Event Description:</label>
+        <textarea  name="Description" id="Description" 
+        placeholder="Write here..." ></textarea>
+        <br>
+        <br>
+        <label for="start_d">Start date:</label>
+        <input type="date" name="start_d" id="start_d">
+        <br>
+        <label for="end_d">End date:</label>
+        <input type="date" name="end_d" id="end_d">
+        <br>
+        <label for="Time incremanet"> Time Incremanet:</label>
+        <select name="select_t" id="select_t">
+
+            <option value="15 min">15 min</option>
+            <option value="30 min">30 min</option>
+            <option value="45 min">45 min</option>
+        </select>
+        <br>
+        <br>
+        <input type="button" value="Create Event" > 
+
+        <h2 id="Input_Availability">Input Availability</h2>
+        <table >
+        <tr>
+            <td><b>Time</b></td>
+            <td><b>Sunday</b></td>
+            <td><b>Monday</b></td>
+            <td><b>Tuesday</b></td>
+            <td><b>Wednesday</b></td>
+            <td><b>Thursdsday</b></td>
+            <td><b>Friday</b></td>
+            <td><b>Saturday</b></td>
+        </tr>
+        <tr>
+            <td>9:00 AM</td>
+            <td><input type="checkbox" id="Sunday" name="day"></td>
+            <td><input type="checkbox" id="Monday" name="day"></td>
+            <td><input type="checkbox" id="Tuesday" name="day"></td>
+            <td><input type="checkbox" id="Wednesday" name="day"></td>
+            <td><input type="checkbox" id="Thursdsday" name="day"></td>
+            <td><input type="checkbox" id="Friday" name="day"></td>
+            <td><input type="checkbox" id="Saturday" name="day"></td>
+        </tr>
+       
+
+        </table>
+        <br>
+        <input type="button" value="Submit" > 
+    </form>
+
+    <h2 id="View_Result">View Result</h2>
+    <table>
+        <tr>
+            <td><b>Time</b></td>
+            <td><b>Sunday</b></td>
+            <td><b>Monday</b></td>
+            <td><b>Tuesday</b></td>
+            <td><b>Wednesday</b></td>
+            <td><b>Thursdsday</b></td>
+            <td><b>Friday</b></td>
+            <td><b>Saturday</b></td>
+        </tr>
+        <tr>
+            <td> 9:00 AM</td>
+             <td>available</td>
+             <td>available</td>
+             <td>available</td>
+             <td>available</td>
+             <td>available</td>
+             <td>available</td>
+             <td>available</td>
+        </tr>
+    </table>
+    <br>
+     <label for="shareable link">shareable link:</label>
+     <a href="https://www.when2meet.com/" target="_blank">When2Meet</a>
+    
+     <h2 id="Sign_Up">Sign Up</h2>
+  
+     <form action="http://httpbin.org/post" method="post">
+        <label for="u_name">User Name:</label>
+        <input type="text" id="u_name" name="u_name">
+        <label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email">
+        <label for="Password">Password:</label>
+        <input type="text" id="Password" name="Password">
+         <br>
+        <input type="button" value="Sign Up">
+    </form>
+    <p>&copy; 2024 When2Meet,all right reserved</p>
+</body>
+</html>
